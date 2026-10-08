@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: vidyasree06/firstcont:db
+    image: vidyasree06/webapp-oct:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: vidyasree06/firstcont:javaapp
+    image: vidyasree06/webapp-oct:javaapp
     ports:
       - "1111:8080"
     deploy:
